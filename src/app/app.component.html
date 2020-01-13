@@ -1,5 +1,70 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-  AAAAA
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+  <div class="navbar-brand">
+    <img src="../../assets/images/brand.png">
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav  mr-auto ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#dashboard">DASHBOARD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">PROJECTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#toolshelf">TOOLSHELF</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#network">NETWORK</a>
+      </li>
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse account-nav" id="navbarSupportedContent">
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item">
+        <img id="envelope" src="../../assets/images/envelope.svg" alt="envelope" />
+      </li>
+      <li class="nav-item message-icon">
+        <!-- <i class="anticon anticon-message" style="transform: scaleX(-1); font-size: 20px"></i> -->
+        <fa-icon [icon]="faCommentDots" style="font-size: 20px; color: #8F99A1"></fa-icon>
+      </li>
+      <li class="nav-item">
+        <img id="envelope" src="../../assets/images/setting.svg" alt="envelope"
+          style="width: 20px; height: 20px; filter: invert(69%) sepia(13%) saturate(246%) hue-rotate(165deg) brightness(86%) contrast(87%);"/>
+      </li>
+      <li class="nav-item">
+        <img src="../../assets/images/user.png" />
+      </li>
+    </ul>
+  </div>
+  <div class="d-md-none d-flex align-items-center">
+    <div class="dropdown mr-3" ngbDropdown placement="bottom-right">
+      <div ngbDropdownToggle>
+        <span class="navbar-toggler-icon"></span>
+      </div>
+      <div ngbDropdownMenu class="dropdown-menu"  aria-labelledby="dropdownMenuButton1">
+        <a ngbDropdownItem class="dropdown-item" href="#">DASHBOARD</a>
+        <a ngbDropdownItem class="dropdown-item" href="#">PROJECTS</a>
+        <a ngbDropdownItem class="dropdown-item" href="#">TOOLSHELF</a>
+        <a ngbDropdownItem class="dropdown-item" href="#">NETWORK</a>
+      </div>
+    </div>
+    <div class="dropdown" ngbDropdown placement="bottom-right">
+      <img src="../../assets/images/user.png" ngbDropdownToggle />
+      <div ngbDropdownMenu class="dropdown-menu"  aria-labelledby="dropdownMenuButton2">
+        <a ngbDropdownItem class="dropdown-item" href="#">
+          <img id="envelope" src="../../assets/images/envelope.svg" alt="envelope" /> Events
+        </a>
+        <a ngbDropdownItem class="dropdown-item" href="#">
+          <fa-icon [icon]="faCommentDots" style="font-size: 20px; color: #8F99A1"></fa-icon> Messages
+        </a>
+        <a ngbDropdownItem class="dropdown-item" href="#">
+          <img id="envelope" src="../../assets/images/setting.svg" alt="envelope"
+          style="width: 20px; height: 20px; filter: invert(69%) sepia(13%) saturate(246%) hue-rotate(165deg) brightness(86%) contrast(87%);"/> 
+          Settings
+        </a>
+      </div>
+    </div>
+  </div>
 </nav>
 <router-outlet></router-outlet>

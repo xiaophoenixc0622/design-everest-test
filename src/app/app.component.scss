@@ -1,4 +1,19 @@
 .navbar {
-    height: 60px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  .account-nav {
+    flex-grow: 0;
+    li {
+      margin-right: 15px;
+    }
+    .message-icon {
+      transform: scaleX(-1);
+    }
+  }
+  .route-nav {
+    flex-direction: row;
+    li {
+      margin-left: 28px;
+    }
+  }
 }

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faCommentDots, faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Design Everest Test';
+  faCommentDots = faCommentDots;
+  faEnvelope = faEnvelope;
+  faCog = faCog;
 }
