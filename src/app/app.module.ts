@@ -15,10 +15,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DashboardComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     FontAwesomeModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
